@@ -3,63 +3,49 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#087d70">
+<meta name="theme-color" content="#eef8f6">
+<meta name="description" content="KKA BAZAR — دوغات | كل احتياجاتك.. بمكان واحد">
 <title>KKA BAZAR | دوغات</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#edf7f5}
+body{font-family:Arial,"Noto Sans Arabic",sans-serif;display:flex;justify-content:center}
+.card{position:relative;width:min(100vw,920px);aspect-ratio:920/1632;overflow:hidden;background:#fff}
+.card>img{display:block;width:100%;height:100%;object-fit:cover;user-select:none;-webkit-user-drag:none}
+.hotspot{position:absolute;display:block;border-radius:24px;cursor:pointer;outline:none}
+.hotspot:active{background:rgba(255,255,255,.12)}
+.call{left:8.4%;top:57.0%;width:39.7%;height:7.2%}
+.location{left:51.8%;top:57.0%;width:39.8%;height:7.2%}
+.instagram{left:8.6%;top:65.4%;width:19.7%;height:9.6%}
+.facebook{left:30.1%;top:65.4%;width:19.7%;height:9.6%}
+.tiktok{left:51.7%;top:65.4%;width:19.7%;height:9.6%}
+.snapchat{left:73.0%;top:65.4%;width:18.8%;height:9.6%}
+.share{left:25.5%;top:75.8%;width:49.0%;height:5.2%;border-radius:28px}
+.powered{left:38%;top:95.8%;width:24%;height:2.5%}
+@media(min-width:921px){body{padding:20px 0}.card{border-radius:28px;box-shadow:0 20px 70px rgba(0,50,48,.22)}}
+@media(prefers-reduced-motion:reduce){.hotspot{transition:none}}
+</style>
 </head>
 <body>
-<main class="page">
-<div class="backdrop"></div><div class="wash"></div><div class="grain"></div>
-<section class="card">
-  <div class="brand-mark">
-    <div class="bag-icon"><span>KKA</span></div>
-    <div class="brand-name"><strong>KKA</strong> <b>BAZAR</b></div>
-  </div>
-
-  <section class="intro">
-    <div class="eyebrow">YOUR EVERYDAY HYPERMARKET</div>
-    <h1>كل احتياجاتك..<br><span>بمكان واحد.</span></h1>
-    <p>أهلاً بكم في <strong>KKA BAZAR</strong></p>
-    <div class="arabic-brand">دوغات</div>
-  </section>
-
-  <section class="actions">
-    <a class="action call" href="tel:07507927364">
-      <span class="action-icon"><svg viewBox="0 0 24 24"><path d="M6.7 3.5l2.1-.5c.7-.2 1.4.2 1.7.8l1.2 2.8c.2.5.1 1.1-.3 1.5L10 9.5a14.7 14.7 0 0 0 4.5 4.5l1.4-1.4c.4-.4 1-.5 1.5-.3l2.8 1.2c.6.3 1 .9.8 1.7l-.5 2.1c-.2.9-1 1.5-1.9 1.5C10.2 18.8 5.2 13.8 5.2 5.4c0-.9.6-1.7 1.5-1.9Z"/></svg></span>
-      <span><small>اتصل بنا</small><strong>0750 792 7364</strong></span><span class="arrow">‹</span>
-    </a>
-    <div class="action location">
-      <span class="action-icon"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-12A7 7 0 0 0 5 9c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg></span>
-      <span><small>موقعنا</small><strong>الموقع قريباً</strong></span><span class="arrow">‹</span>
-    </div>
-  </section>
-
-  <section class="socials">
-    <a class="social instagram" href="https://www.instagram.com/kka_bazar/" target="_blank" rel="noopener"><span class="social-icon">◎</span><strong>Instagram</strong><small>kka_bazar</small><span class="arrow">‹</span></a>
-    <a class="social facebook" href="https://www.facebook.com/share/1DVpqmY2wB/" target="_blank" rel="noopener"><span class="social-icon">f</span><strong>Facebook</strong><small>KKA BAZAR</small><span class="arrow">‹</span></a>
-    <a class="social tiktok" href="https://www.tiktok.com/@kka_bazar" target="_blank" rel="noopener"><span class="social-icon">♪</span><strong>TikTok</strong><small>@kka_bazar</small><span class="arrow">‹</span></a>
-    <a class="social snapchat" href="https://snapchat.com/t/geBRF11D" target="_blank" rel="noopener"><span class="social-icon">◉</span><strong>Snapchat</strong><small>KKA BAZAR</small><span class="arrow">‹</span></a>
-  </section>
-
-  <button class="share" id="shareButton" type="button"><span class="share-symbol">↗</span><strong>مشاركة بطاقة KKA BAZAR</strong><span class="arrow">‹</span></button>
-
-  <div class="values">
-    <div><span>♢</span><small>منتجات طازجة</small></div>
-    <div><span>🛒</span><small>تجربة أفضل</small></div>
-    <div><span>♡</span><small>لأجلكم دائماً</small></div>
-    <div><span>♧</span><small>مجتمعنا أكبر</small></div>
-  </div>
-
-  <footer>
-    <div class="footer-line"><span></span><strong>KKA BAZAR</strong><span></span></div>
-    <p>كل احتياجاتك.. بمكان واحد</p>
-    <a href="https://iq-group.app" target="_blank" rel="noopener">Powered by <b>IQ Group</b></a>
-  </footer>
-</section>
+<main class="card" aria-label="KKA BAZAR digital social card">
+<img src="card-reference.png" alt="KKA BAZAR — دوغات">
+<a class="hotspot call" href="tel:07507927364" aria-label="اتصل بنا"></a>
+<a class="hotspot location" href="#" aria-label="الموقع قريباً" onclick="return false"></a>
+<a class="hotspot instagram" href="https://www.instagram.com/kka_bazar/" target="_blank" rel="noopener" aria-label="Instagram"></a>
+<a class="hotspot facebook" href="https://www.facebook.com/share/1DVpqmY2wB/" target="_blank" rel="noopener" aria-label="Facebook"></a>
+<a class="hotspot tiktok" href="https://www.tiktok.com/@kka_bazar" target="_blank" rel="noopener" aria-label="TikTok"></a>
+<a class="hotspot snapchat" href="https://snapchat.com/t/geBRF11D" target="_blank" rel="noopener" aria-label="Snapchat"></a>
+<button class="hotspot share" type="button" aria-label="مشاركة بطاقة KKA BAZAR"></button>
+<a class="hotspot powered" href="https://iq-group.app" target="_blank" rel="noopener" aria-label="IQ Group"></a>
 </main>
-<script src="script.js"></script>
+<script>
+document.querySelector('.share').addEventListener('click',async()=>{
+ const data={title:'KKA BAZAR | دوغات',text:'KKA BAZAR — كل احتياجاتك.. بمكان واحد.',url:location.href};
+ try{
+  if(navigator.share) await navigator.share(data);
+  else {await navigator.clipboard.writeText(location.href); alert('تم نسخ رابط البطاقة');}
+ }catch(e){}
+});
+</script>
 </body>
 </html>
