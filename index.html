@@ -10,7 +10,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;background:#edf7f5}
 body{font-family:Arial,"Noto Sans Arabic",sans-serif;display:flex;justify-content:center}
-.card{position:relative;width:min(100vw,920px);aspect-ratio:920/1632;overflow:hidden;background:#fff}
+.loading-screen{position:fixed;inset:0;background:#edf7f5;z-index:9999}.card{position:relative;width:min(100vw,920px);aspect-ratio:920/1632;overflow:hidden;background:#fff}
 .card>img{display:block;width:100%;height:100%;object-fit:cover;user-select:none;-webkit-user-drag:none}
 .hotspot{position:absolute;display:block;border-radius:24px;cursor:pointer;outline:none}
 .hotspot:active{background:rgba(255,255,255,.12)}
@@ -20,14 +20,13 @@ body{font-family:Arial,"Noto Sans Arabic",sans-serif;display:flex;justify-conten
 .facebook{left:30.1%;top:65.4%;width:19.7%;height:9.6%}
 .tiktok{left:51.7%;top:65.4%;width:19.7%;height:9.6%}
 .snapchat{left:73.0%;top:65.4%;width:18.8%;height:9.6%}
-.share{left:25.5%;top:75.8%;width:49.0%;height:5.2%;border-radius:28px}
-.powered{left:38%;top:95.8%;width:24%;height:2.5%}.share-content{display:none;align-items:center;justify-content:center;width:100%;height:100%;font:700 14px Arial,"Noto Sans Arabic",sans-serif;color:#164744;direction:rtl}.share.revealed .share-content{display:flex}
+.share{left:25.5%;top:75.8%;width:49.0%;height:5.2%;border-radius:28px;background:transparent;border:0;padding:0;margin:0;outline:none;color:transparent;display:block;overflow:hidden}
+.powered{left:38%;top:95.8%;width:24%;height:2.5%}.share-content{display:none;align-items:center;justify-content:center;width:100%;height:100%;font:700 14px Arial,"Noto Sans Arabic",sans-serif;color:#164744;direction:rtl;background:rgba(255,255,255,.96);border:1px solid rgba(16,160,151,.28);border-radius:28px}.share.revealed .share-content{display:flex}
 @media(min-width:921px){body{padding:20px 0}.card{border-radius:28px;box-shadow:0 20px 70px rgba(0,50,48,.22)}}
 @media(prefers-reduced-motion:reduce){.hotspot{transition:none}}
 </style>
 </head>
-<body>
-<main class="card" aria-label="KKA BAZAR digital social card">
+<body class="loading"><div class="loading-screen"></div><main class="card" aria-label="KKA BAZAR digital social card">
 <img src="card-reference.png" alt="KKA BAZAR — دوغات">
 <a class="hotspot call" href="tel:07507927364" aria-label="اتصل بنا"></a>
 <a class="hotspot location" href="#" aria-label="الموقع قريباً" onclick="return false"></a>
@@ -35,19 +34,22 @@ body{font-family:Arial,"Noto Sans Arabic",sans-serif;display:flex;justify-conten
 <a class="hotspot facebook" href="https://www.facebook.com/share/1DVpqmY2wB/" target="_blank" rel="noopener" aria-label="Facebook"></a>
 <a class="hotspot tiktok" href="https://www.tiktok.com/@kka_bazar" target="_blank" rel="noopener" aria-label="TikTok"></a>
 <a class="hotspot snapchat" href="https://snapchat.com/t/geBRF11D" target="_blank" rel="noopener" aria-label="Snapchat"></a>
-<button class="hotspot share" type="button" aria-label="مشاركة بطاقة KKA BAZAR"><span class="share-content">↗ &nbsp; مشاركة بطاقة KKA BAZAR</span></button>
+<div class="hotspot share" role="button" tabindex="0" aria-label="مشاركة بطاقة KKA BAZAR"><span class="share-content">↗ &nbsp; مشاركة بطاقة KKA BAZAR</span></div>
 <a class="hotspot powered" href="https://iq-group.app" target="_blank" rel="noopener" aria-label="IQ Group"></a>
 </main>
 <script>
-document.querySelector('.share').addEventListener('click',async()=>{
- const button=document.querySelector('.share');
- button.classList.add('revealed');
- const data={title:'KKA BAZAR | دوغات',text:'KKA BAZAR — كل احتياجاتك.. بمكان واحد.',url:location.href};
- try{
-  if(navigator.share) await navigator.share(data);
-  else await navigator.clipboard.writeText(location.href);
- }catch(e){}
-});
+const share=document.querySelector('.share');
+async function shareCard(){
+ share.classList.add('revealed');
+ const d={title:'KKA BAZAR | دوغات',text:'KKA BAZAR — كل احتياجاتك.. بمكان واحد.',url:location.href};
+ try{if(navigator.share)await navigator.share(d);else if(navigator.clipboard)await navigator.clipboard.writeText(location.href)}catch(e){}
+}
+share.addEventListener('click',shareCard);
+share.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();shareCard()}});
+const im=document.querySelector('.card img');
+const gate=document.querySelector('.loading-screen');
+function ready(){gate.style.display='none'}
+if(im.complete)ready();else im.addEventListener('load',ready,{once:true});
 </script>
 </body>
 </html>
