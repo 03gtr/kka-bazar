@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <meta name="theme-color" content="#008080">
+  <title>KKA BAZAR | كل احتياجاتك.. بمكان واحد</title>
+  <meta name="description" content="KKA BAZAR علامة تجارية فاخرة للبقالة. كل احتياجاتك.. بمكان واحد. Your Everyday Hypermarket.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23008080'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='bold'>KKA</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header class="topbar" id="topbar">
+    <div class="brand">
+      <img src="assets/logo.jpg" alt="KKA BAZAR logo" class="logo-img" id="logoImg">
+      <span class="brand-text">KKA BAZAR</span>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة" title="القائمة">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+        <line x1="3" y1="7" x2="21" y2="7"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="17" x2="21" y2="17"></line>
+      </svg>
+    </button>
+  </header>
+
+  <!-- ========== PAGE 1: HOME ========== -->
+  <main class="slide active" id="slide-home" aria-label="الرئيسية">
+    <div class="logo-hero">
+      <img src="assets/logo.jpg" alt="شعار KKA BAZAR" class="logo-hero-img" id="logoHeroImg">
+      <h1 class="kka-title">KKA BAZAR</h1>
+      <p class="tagline-ar">كل احتياجاتك.. بمكان واحد</p>
+      <p class="tagline-en">Your Everyday Hypermarket</p>
+    </div>
+
+    <div class="qr-card">
+      <div class="qr-header">
+        <span class="qr-icon">📱</span>
+        <span class="qr-title">امسح الكود</span>
+        <span class="qr-sub">وخلك قريب من KKA BAZAR</span>
+      </div>
+      <div class="qr-visual">
+        <div class="qr-flow">
+          <div class="flow-step">
+            <div class="step-icon">📱</div>
+            <span class="step-label">تلفونك</span>
+          </div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step">
+            <div class="step-icon">◈</div>
+            <span class="step-label">الـ QR</span>
+          </div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step">
+            <div class="step-icon">🏪</div>
+            <span class="step-label">KKA BAZAR</span>
+          </div>
+        </div>
+        <p class="qr-caption">وجّه كاميرا تلفونك على الـ QR<br>واراتنا بسهولة.</p>
+        <button class="cta-btn qr-cta" id="qrCtaBtn" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 20h3l1.5-6h9L16 20h3"></path>
+            <rect x="7" y="4" width="10" height="13" rx="1.5"></rect>
+            <circle cx="12" cy="11.5" r="2.5" fill="currentColor" stroke="none"></circle>
+          </svg>
+          <span class="cta-text">وجّه الكاميرا على الـ QR</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="actions-grid">
+      <button class="action-btn call-btn" id="callBtn" type="button" aria-label="اتصل بنا على 0750 792 7364">
+        <span class="action-icon">📞</span>
+        <span class="action-title">اتصل بنا</span>
+        <span class="action-sub">0750 792 7364</span>
+      </button>
+      <button class="action-btn location-btn" id="locationBtn" type="button" aria-label="انتقل إلى صفحة الموقع">
+        <span class="action-icon">📍</span>
+        <span class="action-title">موقعنا</span>
+        <span class="action-sub">قريباً</span>
+      </button>
+      <button class="action-btn discover-btn" id="discoverBtn" type="button" aria-label="انتقل إلى صفحة الاكتشاف">
+        <span class="action-icon">📱</span>
+        <span class="action-title">تابعنا</span>
+        <span class="action-sub">الوسائط الاجتماعية</span>
+      </button>
+      <button class="action-btn offers-btn" id="offersBtn" type="button" aria-label="انتقل إلى صفحة العروض">
+        <span class="action-icon">🎁</span>
+        <span class="action-title">عروضنا</span>
+        <span class="action-sub">قريباً</span>
+      </button>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-brand">KKA BAZAR</div>
+      <div class="footer-tagline">كل احتياجاتك.. بمكان واحد</div>
+      <div class="footer-powered">
+        Powered by
+        <a href="https://iq-group.app" target="_blank" rel="noopener noreferrer">IQ Group</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ========== PAGE 2: DISCOVER ========== -->
+  <section class="slide" id="slide-discover" aria-label="اكتشف KKA BAZAR">
+    <div class="page-header">
+      <h2 class="page-title">اكتشف KKA BAZAR</h2>
+      <p class="page-subtitle">لكل شيء مكانه — وما تحتاجه غالباً توجد هنا</p>
+    </div>
+
+    <div class="categories-grid" id="categoriesGrid">
+      <div class="category-card" data-category="grocery">
+        <div class="category-icon">🛒</div>
+        <h3 class="category-name">البقالة</h3>
+        <p class="category-desc">فواكه، خضار، منتجات ألبان، وفاصوليا — أساسيات المطبخ</p>
+      </div>
+      <div class="category-card" data-category="drinks">
+        <div class="category-icon">🥤</div>
+        <h3 class="category-name">المشروبات</h3>
+        <p class="category-desc">عصير، ماء، مشروبات غازية، وقهوة وفاكهة</p>
+      </div>
+      <div class="category-card" data-category="meat">
+        <div class="category-icon">🥩</div>
+        <h3 class="category-name">اللحوم والخضار</h3>
+        <p class="category-desc">لحوم طازجة Lifetime وخضار يومية مختارة</p>
+      </div>
+      <div class="category-card" data-category="personal">
+        <div class="category-icon">🧴</div>
+        <h3 class="category-name">العناية الشخصية</h3>
+        <p class="category-desc">مصححات، عطور، وادوات العناية اليومية</p>
+      </div>
+      <div class="category-card" data-category="cleaning">
+        <div class="category-icon">🧹</div>
+        <h3 class="category-name">المنظفات</h3>
+        <p class="category-desc">منظفات المنزل، صابون، ومواد نظافة عائلية</p>
+      </div>
+      <div class="category-card" data-category="snacks">
+        <div class="category-icon">🍿</div>
+        <h3 class="category-name">المقرمشات والوجبات الخفيفة</h3>
+        <p class="category-desc">وجبات خفيفة، أ Snacks، ومقبلات عائلية</p>
+      </div>
+      <div class="category-card" data-category="home">
+        <div class="category-icon">🏠</div>
+        <h3 class="category-name">مستلزمات المنزل</h3>
+        <p class="category-desc">ورق تواليت، أدوات منزلية، ديكور، وأدوات تحضير الطعام</p>
+      </div>
+    </div>
+
+    <div class="discover-cta">
+      <p class="discover-msg">"Whatever you need — you'll probably find it here."</p>
+      <button class="action-btn secondary-btn" id="discoverBackBtn" type="button" aria-label="العودة إلى الرئيسية">
+        <span class="action-icon">🏠</span>
+        <span class="action-title">العودة للرئيسية</span>
+      </button>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-brand">KKA BAZAR</div>
+      <div class="footer-tagline">كل احتياجاتك.. بمكان واحد</div>
+      <div class="footer-powered">
+        Powered by
+        <a href="https://iq-group.app" target="_blank" rel="noopener noreferrer">IQ Group</a>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ========== PAGE 3: CONNECT (CONTACT + LOCATION + OFFERS) ========== -->
+  <section class="slide" id="slide-contact" aria-label="تواصل مع KKA BAZAR">
+    <div class="page-header">
+      <h2 class="page-title">تواصل مع KKA BAZAR</h2>
+      <p class="page-subtitle">نحن هنا — اتصل بنا أو تابعنا</p>
+    </div>
+
+    <div class="contact-section">
+      <div class="contact-block">
+        <div class="contact-icon">📞</div>
+        <div class="contact-info">
+          <h3 class="contact-label">الهاتف</h3>
+          <p class="contact-value">0750 792 7364</p>
+        </div>
+        <a href="tel:+9647507927364" class="call-link" id="callLink" aria-label="اتصل على 0750 792 7364">
+          <span class="call-link-text">اتصل الآن</span>
+          <svg class="call-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.9v3a7 7 0 0 1-7 7H5a7 7 0 0 1-7-7v-3"></path>
+            <path d="M2 20h3l1-4H5l1 4h3"></path>
+            <path d="M19 8l-4-4-4 4"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="social-section">
+      <h3 class="social-title">تابعنا على الوسائط الاجتماعية</h3>
+      <div class="social-grid">
+        <a href="https://www.instagram.com/kka_bazar?stkn=MTc1bmJiZ2lnOHBjZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-card instagram" id="igCard" aria-label="تابعنا على إنستغرام">
+          <span class="social-icon">📷</span>
+          <span class="social-name">Instagram</span>
+          <span class="social-handle">@kka_bazar</span>
+        </a>
+        <a href="https://www.facebook.com/share/1DVpqmY2wB/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-card facebook" id="fbCard" aria-label="تابعنا على فيسبوك">
+          <span class="social-icon">👍</span>
+          <span class="social-name">Facebook</span>
+          <span class="social-handle">صفحة KKA BAZAR</span>
+        </a>
+        <a href="https://snapchat.com/t/geBRF11D" target="_blank" rel="noopener noreferrer" class="social-card snapchat" id="snapCard" aria-label="تابعنا على سناب شات">
+          <span class="social-icon">👻</span>
+          <span class="social-name">Snapchat</span>
+          <span class="social-handle">kka_bazar</span>
+        </a>
+        <a href="https://www.tiktok.com/@kka_bazar?_r=1&_t=ZS-99tl0CRTbJS" target="_blank" rel="noopener noreferrer" class="social-card tiktok" id="ttCard" aria-label="تابعنا على تيك توك">
+          <span class="social-icon">🎵</span>
+          <span class="social-name">TikTok</span>
+          <span class="social-handle">@kka_bazar</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="location-section">
+      <div class="location-block">
+        <div class="location-icon">📍</div>
+        <div class="location-info">
+          <h3 class="location-label">الموقع</h3>
+          <p class="location-value">قريباً</p>
+          <p class="location-note">سيتم إضافة الموقع قريباً</p>
+        </div>
+        <div class="location-badge">قريباً</div>
+      </div>
+      <p class="location-disclaimer">عندما يكون الموقع جاهزاً، سنضيفه هنا كرابط Google Maps.</p>
+    </div>
+
+    <div class="offers-section">
+      <div class="offers-block">
+        <div class="offers-icon">🎁</div>
+        <div class="offers-info">
+          <h3 class="offers-label">عروضنا</h3>
+          <p class="offers-value">قريباً</p>
+          <p class="offers-note">العروض سيتم نشرها عبر إنستغرام والوسائط الاجتماعية</p>
+        </div>
+        <div class="offers-badge">قريباً</div>
+      </div>
+    </div>
+
+    <div class="contact-cta">
+      <button class="action-btn secondary-btn" id="contactBackBtn" type="button" aria-label="العودة إلى الرئيسية">
+        <span class="action-icon">🏠</span>
+        <span class="action-title">العودة للرئيسية</span>
+      </button>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-brand">KKA BAZAR</div>
+      <div class="footer-tagline">كل احتياجاتك.. بمكان واحد</div>
+      <div class="footer-powered">
+        Powered by
+        <a href="https://iq-group.app" target="_blank" rel="noopener noreferrer">IQ Group</a>
+      </div>
+    </footer>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <nav class="navbar" id="navbar" aria-label="التنقل بين الصفحات">
+    <button class="nav-item active" data-page="home" aria-label="الرئيسية" aria-current="page">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span class="nav-label">الرئيسية</span>
+    </button>
+    <button class="nav-item" data-page="discover" aria-label="اكتشف">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.5" y2="16.5"></line>
+      </svg>
+      <span class="nav-label">اكتشف</span>
+    </button>
+    <button class="nav-item" data-page="contact" aria-label="تواصل">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.9v3a7 7 0 0 1-7 7H5a7 7 0 0 1-7-7v-3"></path>
+        <path d="M2 20h3l1-4H5l1 4h3"></path>
+        <path d="M19 8l-4-4-4 4"></path>
+      </svg>
+      <span class="nav-label">تواصل</span>
+    </button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
