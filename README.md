@@ -1,16 +1,7 @@
-# KKA BAZAR — Social Media Digital Card
-
-صفحة تعريفية رقمية واحدة لـ KKA BAZAR، وليست متجرًا أو موقعًا متعدد الصفحات.
-
-ارفع:
-- index.html
-- styles.css
-- script.js
-
-واحتفظ بالملفات الموجودة أصلًا:
-- assets/logo.jpg
-- assets/banner.jpg
-
-الصفحة تحتوي على الاتصال، Instagram، Facebook، TikTok، Snapchat، وموقع "قريباً".
-
-Powered by IQ Group.
+# KKA BAZAR — Digital Social Media Card
+بطاقة رقمية من صفحة واحدة لـ KKA BAZAR / دوغات.
+الخلفية مأخوذة من صورة الواجهة المرفوعة، مع تمويه قوي حتى لا تغطي الصورة على اسم KKA BAZAR ومحتوى البطاقة.
+أيقونات Instagram / Facebook / TikTok / Snapchat ملونة حسب التطبيق.
+الموقع يظهر «الموقع قريباً» إلى حين إضافة العنوان.
+لا توجد منتجات أو QR أو صفحات إضافية.
+Powered by IQ Group — https://iq-group.app
